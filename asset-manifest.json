@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Rahul-Pandit-Portfolio/static/css/main.6b538d63.css",
+    "main.js": "/Rahul-Pandit-Portfolio/static/js/main.1bec6f30.js",
+    "static/js/453.6264690d.chunk.js": "/Rahul-Pandit-Portfolio/static/js/453.6264690d.chunk.js",
+    "index.html": "/Rahul-Pandit-Portfolio/index.html",
+    "main.6b538d63.css.map": "/Rahul-Pandit-Portfolio/static/css/main.6b538d63.css.map",
+    "main.1bec6f30.js.map": "/Rahul-Pandit-Portfolio/static/js/main.1bec6f30.js.map",
+    "453.6264690d.chunk.js.map": "/Rahul-Pandit-Portfolio/static/js/453.6264690d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b538d63.css",
+    "static/js/main.1bec6f30.js"
+  ]
+}
