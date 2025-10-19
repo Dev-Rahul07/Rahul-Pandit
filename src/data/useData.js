@@ -5,5 +5,5 @@ export const userData = {
   githubUrl: "https://github.com/Dev-Rahul07",
   linkedinUrl: "https://www.linkedin.com/in/rahul-pandit-abc123/",
   email: "rahulpandit07.it@gmail.com",
-  resumeUrl: ""
+  resumeUrl: "https://drive.google.com/file/d/1MbnAOu8rEXGyOcyUaQoldEcOMl1fd81Z/view?usp=drive_link"
 };
