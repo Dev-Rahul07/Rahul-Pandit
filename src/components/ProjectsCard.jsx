@@ -19,13 +19,13 @@ const ProjectCard = ({ project }) => (
     </div>
 
     {/* Links */}
-    <div className="flex gap-3">
+    <div className="flex gap-6"> {/* Increased gap between buttons */}
       {project.githubUrl && (
         <a
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors duration-200"
+          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded transition-all duration-200 hover:bg-blue-700 hover:underline"
         >
           <Github className="icon icon-sm" /> GitHub
         </a>
@@ -35,9 +35,9 @@ const ProjectCard = ({ project }) => (
           href={project.deployUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded transition-colors duration-200"
+          className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded transition-all duration-200 hover:bg-green-700 hover:underline"
         >
-          🚀 Live
+           Live
         </a>
       )}
     </div>
@@ -45,5 +45,4 @@ const ProjectCard = ({ project }) => (
 );
 
 export default ProjectCard;
-
 
