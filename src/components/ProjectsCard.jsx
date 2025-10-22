@@ -2,7 +2,7 @@ import React from "react";
 import { Github } from "./Icons";
 
 const ProjectCard = ({ project }) => (
-  <div className="project-card p-4 bg-gray-900 rounded-lg shadow-md">
+  <div className="project-card p-4 bg-gray-900 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
     <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
     <p className="text-gray-400 mb-4">{project.description}</p>
 
@@ -19,13 +19,13 @@ const ProjectCard = ({ project }) => (
     </div>
 
     {/* Links */}
-    <div className="flex gap-4">
+    <div className="flex gap-3">
       {project.githubUrl && (
         <a
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1 text-blue-400 hover:text-blue-500"
+          className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors duration-200"
         >
           <Github className="icon icon-sm" /> GitHub
         </a>
@@ -35,7 +35,7 @@ const ProjectCard = ({ project }) => (
           href={project.deployUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-400 hover:text-green-500"
+          className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded transition-colors duration-200"
         >
           🚀 Live
         </a>
@@ -45,4 +45,5 @@ const ProjectCard = ({ project }) => (
 );
 
 export default ProjectCard;
+
 
