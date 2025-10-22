@@ -2,34 +2,47 @@ import React from "react";
 import { Github } from "./Icons";
 
 const ProjectCard = ({ project }) => (
-  <div className="project-card">
+  <div className="project-card p-4 bg-gray-900 rounded-lg shadow-md">
     <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
     <p className="text-gray-400 mb-4">{project.description}</p>
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "0.5rem",
-        marginBottom: "1rem",
-      }}
-    >
+
+    {/* Tech tags */}
+    <div className="flex flex-wrap gap-2 mb-4">
       {project.tech.map((t, i) => (
-        <span key={i} className="tech-tag">
+        <span
+          key={i}
+          className="bg-gray-700 text-white px-2 py-1 rounded text-sm"
+        >
           {t}
         </span>
       ))}
     </div>
-    <div>
-      <a
-        href={project.githubUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="link"
-      >
-        <Github className="icon icon-sm mr-1" /> View on GitHub
-      </a>
+
+    {/* Links */}
+    <div className="flex gap-4">
+      {project.githubUrl && (
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 text-blue-400 hover:text-blue-500"
+        >
+          <Github className="icon icon-sm" /> GitHub
+        </a>
+      )}
+      {project.deployUrl && (
+        <a
+          href={project.deployUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-400 hover:text-green-500"
+        >
+          🚀 Live
+        </a>
+      )}
     </div>
   </div>
 );
 
 export default ProjectCard;
+
