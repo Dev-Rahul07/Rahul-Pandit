@@ -7,6 +7,7 @@ It features add, edit, and delete options, along with data visualization charts 
 The backend is powered by Django REST API, and the frontend is built using React.js with a clean, responsive UI.`,
     tech: ["React", "Django", "SQLite"],
     githubUrl: "https://github.com/Dev-Rahul07/Expense-Tracking-App",
+    deployUrl:"https://expense-app-frontend-beige.vercel.app/"
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ The backend is powered by Django REST API, and the frontend is built using React
 It allows teachers to mark student attendance by scanning QR codes, and also provides manual attendance, login system, export to Excel, and a clean UI.`,
     tech: ["Python", "Django", "HTML", "CSS", "OpenCV", "QR Code Generation"],
     githubUrl: "https://github.com/Dev-Rahul07/QR_Code_Attendance_System",
+    deployUrl:"#"
   },
   {
     id: 3,
@@ -22,5 +24,6 @@ It allows teachers to mark student attendance by scanning QR codes, and also pro
     description: `An AI assistant project built using core Python and APIs to automate tasks and provide smart responses.`,
     tech: ["Python", "API", "Automation"],
     githubUrl: "https://github.com/Dev-Rahul07/Jarvis_Project",
+    deployUrl:"#"
   },
 ];
