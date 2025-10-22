@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => (
     </div>
 
     {/* Links */}
-    <div className="flex gap-6"> {/* Increased gap between buttons */}
+    <div className="flex">
       {project.githubUrl && (
         <a
           href={project.githubUrl}
@@ -35,9 +35,9 @@ const ProjectCard = ({ project }) => (
           href={project.deployUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded transition-all duration-200 hover:bg-green-700 hover:underline"
+          className="flex items-center gap-2 px-4 py-2 ml-4 bg-green-600 text-white rounded transition-all duration-200 hover:bg-green-700 hover:underline"
         >
-           Live
+          Live
         </a>
       )}
     </div>
@@ -45,4 +45,3 @@ const ProjectCard = ({ project }) => (
 );
 
 export default ProjectCard;
-
