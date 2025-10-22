@@ -20,8 +20,8 @@ const ProjectCard = ({ project }) => (
       ))}
     </div>
 
-    {/* Links */}
-    <div className="flex flex-wrap gap-4">
+    {/* Buttons */}
+    <div className="flex flex-wrap gap-4"> {/* Controls space between buttons */}
       {/* GitHub */}
       {project.githubUrl && (
         <a
@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => (
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-all duration-200"
         >
-          {/* Optional placeholder for alignment */}
+          {/* Placeholder icon for alignment */}
           <span className="w-5 h-5 inline-block"></span>
           <span className="hover:underline">Live</span>
         </a>
@@ -53,5 +53,3 @@ const ProjectCard = ({ project }) => (
 );
 
 export default ProjectCard;
-
-
